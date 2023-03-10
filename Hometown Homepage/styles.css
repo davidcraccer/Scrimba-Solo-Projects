@@ -1,0 +1,267 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+*/
+
+
+
+
+body {
+    margin: 0;
+    text-align: center;
+    color: #1D3557;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header, 
+.header h2,
+.activities-container, 
+.guide-container, 
+.info-container{
+    display: flex;
+}
+
+
+.header h1, 
+.header h2, 
+.activities h3, 
+.info-container h3, 
+.info-container h4, 
+.img-descrip-container p:nth-child(2){
+    font-weight: 700;
+}
+
+.img-descrip-container p:nth-child(2),
+.info-container p,
+.info-container h4{
+    line-height: 18px;
+}
+
+.header h1, 
+.header h2, 
+.guide-container, 
+.guide-container img{
+    border-radius: 10px;
+}
+
+
+.header{
+    background-image: url(/images/torshov.jpg);
+    background-size: cover;
+    height: 343px;
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header h1{
+    margin: 0 0 11px;
+    padding: 5px 12px;
+    background-color: #1D3557;
+    font-size: 32px;
+    line-height: 37px;
+}
+
+.header h2{
+    align-items: center;
+    background: #457B9D;
+    padding: 3px 29px;
+    margin: 0;
+    height: 52px;
+    width: 412px;
+    font-size: 19px;
+    line-height: 22px;
+}
+
+
+
+.activities{
+    background-color:  #F1FAEE;
+    padding: 40px 34px ;
+}
+
+.activities h3{
+    margin:  0 0 54px;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.activities-container{
+    gap: 1em;
+}
+
+.activities img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;   
+}
+
+.guide{
+    padding: 50px 160px;
+}
+
+.guide-container{
+    background: #A8DADC;
+    box-shadow: 0px 6px 0px #1D3557;
+    padding: 23px 13px;
+}
+
+.guide-container img{
+    height: 248.6666717529297px;
+    width: 180px;
+    object-fit:cover;
+
+}
+.info-container{
+    flex-direction: column;
+    margin: 0px 8px 0;
+}
+
+.info-container h3{
+    margin: 30px 0 14px 0;
+font-size: 24px;
+line-height: 28px;
+}
+
+.info-container p{
+font-style: italic;
+font-weight: 400;
+margin: 0 0 12px;
+
+}
+
+
+
+@media (max-width: 600px){
+    
+    .header{
+        height: 100vh;
+    }
+    .header h1{
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .header h2{
+    width: 80%;
+    font-size: 14px;
+    }
+
+    
+    .activities{
+    padding: 40px 15px 30px;
+    }
+
+    .activities h3{
+        margin: 0 30px 54px;
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .activities-container{
+        display: block;
+    }
+    .activities img{
+        height: 100%;
+        width: 70%;  
+        margin: 0 0 18px;
+    }
+    .activities p{
+        font-size: 14px;
+        padding: 0 25px;
+    }
+    .img-descrip-container{
+        margin: 50px 0 30px;
+    }
+    
+    .guide{
+    padding: 30px 15px;
+    }
+
+    .guide-container{
+        padding: 23px 13px;
+        display: block;
+    }
+
+    .guide-container img{
+        border-radius: 50%;
+        height: 220px;
+    }
+    .info-container{
+        font-size: 12px;
+        margin: 0px 20px 0;
+    }
+
+    .info-container h3{
+    margin: 16px 0 12px 0;
+    font-size: 18px;
+    }
+
+    .info-container p{
+    margin: 0;
+
+    }
+}
+
+@media (min-width: 600px){
+    .guide{
+        padding: 30px 15px;
+        }
+    
+        .guide-container{
+            padding: 23px 13px;
+        }
+    
+        .info-container{
+            margin: 0px 20px 0;
+        }
+        .info-container p{
+            margin: 0px 40px 0;
+        }
+}
+
+
+
+
+@media (min-width: 845px){
+    
+    
+    
+    .activities h3{
+        margin:  20px 0 54px;
+    }
+    
+    .activities-container p{
+        margin: 20px 50px;
+    }
+    
+    .activities img{
+        width: 150px;
+        height: 150px;
+    }
+    
+    .guide{
+        padding: 50px 160px;
+    }
+    
+    .guide-container{
+        padding: 23px 23px;
+    }
+    
+    .info-container{
+        margin: 0px 15px 0;
+    }
+    .info-container p{
+        margin: 0px 50px 0;
+    }
+    
+    
+}
+
+@media (min-width: 992px){
+    .guide{
+        padding: 50px 260px;
+    }
+    .info-container p{
+        margin: 0px 50px 0;
+    }
+}
