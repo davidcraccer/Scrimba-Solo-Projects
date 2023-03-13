@@ -12,10 +12,18 @@ button.addEventListener('click', () => {
         for (const prop in result) {
             result[prop] = result[prop].toFixed(2)
         }
-        setInterval(()=>{
-            length.textContent = `${value} meters = ${result.feet} feet | ${value} feet = ${result.meters} meters`
-            volume.textContent = `${value} liters = ${result.gallons} gallons | ${value} gallons = ${result.liters} liters`
-            mass.textContent = `${value} kilos = ${result.pounds} pounds | ${value} pounds = ${result.kilos} kilos`
+        setTimeout(()=>{
+            length.innerHTML = `${value} meters = ${result.feet} feet 
+                                <span class='hidden'>|</span> 
+                                <div class="convert-line">${value} feet = ${result.meters} meters</div>`
+
+            volume.innerHTML = `${value} liters = ${result.gallons} gallons 
+                                <span class='hidden'>|</span> 
+                                <div class="convert-line">${value} gallons = ${result.liters} liters</div>`
+
+            mass.innerHTML = `${value} kilos = ${result.pounds} pounds 
+                                <span class='hidden'>|</span> 
+                                <div class="convert-line">${value} pounds = ${result.kilos} kilos</div>`
         }
         ,200)
     }
