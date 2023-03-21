@@ -7,12 +7,15 @@ body {
     font-family: 'Smythe', cursive;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
 } 
 .flex{
     display: flex;
 }
 
+header, .checkout, .menu{
+    min-width: 600px;
+}
 
 header{
     background: url(/images/ferks-guare-KEZdWfYD-ow-unsplash\ 1.png) no-repeat;
@@ -82,6 +85,7 @@ font-weight: 200;
 
 height: 50px;
 width: 50px;
+margin-right: 0;
 
 border-radius: 50%;
 border: 1.5px solid #DEDEDE;
@@ -137,7 +141,6 @@ justify-content: center;
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
-
     background: #16DB99;
     border: none;
     border-radius: 3px;
@@ -148,27 +151,27 @@ justify-content: center;
 }
 
 
-.container{
-    display: none;
-    padding: 46px;
-    position: fixed;
-    top: 10vh;
-    
-}
 .payment{
     font-family: Verdana;
-    background-color: white;
+
+    position: fixed;
+    top: 20vh;
+
+    max-width: 510px;
+    margin: 0 46px;
     padding: 47px 23px 30px;
+
+    background-color: white;
     border: 1px solid black;
     box-shadow: 0 0 0px 5000px rgba(0, 0, 0, 0.5);
 }
 
 .payment h3{
-text-align: center;
-font-size: 24px;
-font-weight: 700;
-line-height: 31px;
-margin-bottom: 46px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    margin-bottom: 46px;
 }
 
 .payment input{
@@ -179,13 +182,27 @@ margin-bottom: 46px;
     line-height: 1.5em;
     padding: 5px 10px;
     margin: 23px 0 0 ;
-
+    border: 1.3px solid #757575;
+    border-radius: 3.88991px;
 }
 
 .payment .buy-btn{
+    padding: 16px 0;
     margin-top: 46px;
 }
 
+.thanks{
+padding: 46px;
+width: 100%;
+}
+.thanks h2{
+    color: #065F46;
+    background: #ECFDF5;
+    text-align: center;
+    width: 100%;
+    padding: 50px 0;
+    margin-bottom: 100px;
+}
 
 
 .buy-btn:hover, .add-btn:hover, .remove:hover{
