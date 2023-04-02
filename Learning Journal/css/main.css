@@ -1,0 +1,237 @@
+html, 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: Source Sans Pro;
+    background: #FAFAFA;
+    padding-top: 70px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+section{
+    padding: 0 20px;
+}
+
+.flex{
+    display: flex;
+}
+.grid{
+    display: grid;
+}
+
+/* header */
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 24px 19px 20px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+header .logo{
+    align-items: center;
+    gap: 3px;
+}
+
+header .logo h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15px;
+    letter-spacing: -0.03em;
+    color: #0E0E0E;
+
+}
+header .logo img{
+    height: 23.16176414489746px;
+    width: 23.16176414489746px;
+}
+
+header nav a{
+    margin: 0 0 0 20px;
+}
+header nav a:hover{
+    text-decoration: underline black;
+}
+header ul li a{
+    color: #090909;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    text-align: right;
+}
+
+/* spotlight */
+.spotlight{
+    position: relative;
+    color: #FFFFFF;
+    background-image: url(/images/article-image-hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 293px;
+}
+.spotlight > div {
+    position: absolute; 
+    bottom: 0; 
+    padding: 0 20px 20px 0; 
+}
+.spotlight-title{
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 35px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    margin: 8px 0;
+}
+.spotlight-description{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+
+}
+.date{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+/* blogs */
+.recent-post-title{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+
+}
+.blogs{
+    margin-top: 34px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.blogs img{
+    width: 100%;
+}
+
+.blog{
+    padding: 13px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+}
+.blog:hover{
+    border-color: rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+}
+
+.blog p{
+    color: #505050;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+
+}
+.blog .date{
+    color: #000000;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 14px 0 9px;
+}
+
+.blog h3{
+    color: #141414;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 26px;
+    margin: 9px 0;
+}
+
+.more-blogs-btn{
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+
+    border: none;
+    background: none;
+    width: 100%;
+    margin: 7px auto 0;
+    text-decoration: underline;
+
+}
+
+footer{
+    margin-top: 43px;
+    padding: 37px 0;
+    background: #202020;
+    color: #ECECEC;
+    text-align: center;
+
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 13px;
+    letter-spacing: -0.03em;
+}
+
+footer p:nth-last-child(1){
+    color: #D7D7D7;
+    font-family: Source Sans Pro;
+    font-weight: 400;
+    line-height: 15px;
+    margin-top: 3px;
+}
+
+
+
+button:hover{
+    cursor: pointer;
+}
+
+
+
+
+@media (min-width:1085px) {
+    section{
+        padding: 0 53px;
+    }
+    header{
+        padding: 24px 53px;
+    }
+    .spotlight{
+        min-height: 488px;
+    }
+    .spotlight > div{
+        padding: 0 53px 60px 0; 
+    }
+    .spotlight-title{
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 35px;
+        letter-spacing: -0.03em;
+        text-align: left;
+        margin: 9px 0 10px;
+    }
+    .spotlight-description{
+    max-width: 614.8438720703125px;
+    }
+    .blogs{
+        margin-top: 53px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+}

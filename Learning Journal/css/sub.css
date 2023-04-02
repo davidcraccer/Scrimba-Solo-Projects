@@ -1,0 +1,104 @@
+.home-intro{
+    padding: 32px 20px 0;
+    color: #151515;
+}
+
+.home-intro .spotlight-title{
+    margin: 16px 0 15px;
+}
+.home-intro > img{
+    width: 100%;
+    margin: 35px 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.31), rgba(0, 0, 0, 0.31)), url(image.png);
+    border-radius: 3px;
+    
+}
+.learning-journey{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.section-sub-title{
+    display: block;
+    margin: 1em 0;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+}
+.section-sub-title:nth-of-type(1){
+    margin-top: 0;
+}
+
+.recent-post-title{
+    margin-top: 51px;
+}
+/* unsetting margin of the main css */
+.blog:nth-last-child(1){
+    margin-bottom: 0;
+}
+
+footer{
+    margin-top: 56px;
+}
+
+.self-introduction{
+    margin: 26px 0 50px;
+}
+.self-introduction img{
+    margin-top: 26px;
+    height: 182px;
+    width: 182px;
+
+}
+
+.self-introduction h1{
+    margin: 27px 0 16px;
+}
+
+
+@media (min-width:1085px) {
+    .home-intro{
+        padding: 71px 53px 0;
+    }
+    .home-intro > div, .self-intro > div:nth-last-child(1){
+        padding: 0 68px;
+    }
+    .spotlight-title{
+        margin: 24px 0 27px;
+    }
+    .spotlight-description{
+        max-width: unset;
+    }
+    .home-intro > img{
+        max-height: 488px;
+        object-fit: cover;
+        object-position: 0 -200px;
+    }
+    .section-sub-title{
+        margin: 2em 0;
+    }
+    .recent-post-title{
+        margin-top: 73px;
+
+        color: #141414;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 26px;
+    }
+
+
+    .self-introduction{
+        margin: 91px 0 65px;
+        display: flex;
+        align-items: center;
+        gap: 33px;
+    }
+    .self-introduction h1{
+        margin: 0 0 10px;
+    }
+    .self-introduction img{
+        margin-top: 0px;
+    }
+}
