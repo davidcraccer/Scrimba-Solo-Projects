@@ -14,7 +14,7 @@
     </head>
     <body>
         <header class="flex">
-                <a href="index.html">
+                <a href="main.html">
                     <div class="logo flex">
                         <img src="images/logo.png" alt="My Website Logo">
                         <h1>My Website</h1>
@@ -35,9 +35,9 @@
 
         <section class="self-intro">
             <div class="self-introduction">
-                <img src="/images/pfp.png" alt="">
+                <img src="/images/pfp.jpg" alt="My Profile Pic">
                 <div>
-                    <h1>Hi there! My name is Roku and welcome to my learning journal.</h1>
+                    <h1>Hi there! My name is David and welcome to my learning journal.</h1>
                     <p class="spotlight-description">After several months of learning in the Frontend Developer Career Path, I've made the big jump over to the Bootcamp to get expert code reviews of my Solo Projects projects and meet like-minded peers.</p>
                 </div>
             </div>
@@ -63,26 +63,25 @@
         <section>
             <h3 class="recent-post-title">Recent posts</h3>
             <div class="blogs grid">
-                <div class="blog grid">
-                    <img src="/images/article-image-03.png" alt="PC Picture">
-                    <p class="date">JULY 23, 2022</p>
-                    <h3>Blog one</h3>
+                <div class="blog" data-id="One">
+                    <img src="/images/article-image-03.png" alt="Blog Picture">
+                    <p class="date">June 23, 2022</p>
+                    <h3>Blog One</h3>
                     <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
                 </div>
                 
-                
-                <div class="blog">
-                    <img src="/images/article-image-02.png" alt="">
-                    <p class="date">JULY 23, 2022</p>
+                <div class="blog" data-id="Two">
+                    <img src="/images/article-image-02.png" alt="Blog Picture">
+                    <p class="date">JULY 19, 2022</p>
                     <h3>Blog Two</h3>
-                    <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+                    <p>Discovering the Power of HTML and CSS: My Journey as a Front End Engineer</p>
                 </div>
-                
-                <div class="blog">
-                    <img src="/images/article-image-01.png" alt="">
+    
+                <div class="blog" data-id="Three">
+                    <img src="/images/article-image-01.png" alt="Blog Picture">
                     <p class="date">JULY 23, 2022</p>
                     <h3>Blog Three</h3>
-                    <p>I'm excited to start a new learning journey as a Scrimba Bootcamp student! After several months of learning in the Frontend Developer Career Path.</p>
+                    <p>JavaScript Essentials: My Path to Mastery</p>
                 </div>
             </div>
         </section>
@@ -92,6 +91,7 @@
             <p>My Learning Journal</p>
             <p>Copyright ©2022</p>
         </footer>
+        <script type='module'src="/main.js"></script>
     </body>
 </html>
 <!-- https://www.figma.com/file/hE5klIn1AEQ9XWZWmurs7y/Learning-Journal%2FBlog?node-id=1-433&t=CTTf2v92pVkmCjEe-0 -->
