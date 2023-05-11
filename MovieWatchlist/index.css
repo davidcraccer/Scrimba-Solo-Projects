@@ -1,0 +1,257 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: inter, sans-serif;
+}
+
+/* Typography */
+header h1{
+    font-size: 43px;
+    font-weight: 800;
+    line-height: 24px;
+    letter-spacing: -0.045em;
+}
+
+header a{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+#search-input, #search-btn{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.empty-hero{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.empty-hero > a{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.movie .title{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.small-headings{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #111827;
+}
+
+.description{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #6B7280;
+
+}
+.read-more{
+font-size: 12px;
+font-weight: 400;
+line-height: 20px;
+color: #272727;
+
+}
+
+/* Layout */
+a {
+    text-decoration: none;
+}
+
+
+
+header{
+    background-color: #0e1111;
+    color: whitesmoke;
+    margin-bottom: 44px;
+    height: 208px;
+    width: 100%;
+    position: relative;
+}   
+
+header h1{
+    margin: 82px 0 0 42px;
+    position: absolute;
+    top: 0;
+}
+
+header .storage-nav{
+    margin: 95px 42px 0 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+header img{
+    object-fit: fill;
+    height: 208px;
+    width: 100%;
+    
+}
+
+header a{
+    color: whitesmoke;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 44px;
+    bottom: -20px;
+}
+
+#search-input{
+    padding: 9px 41px;
+    width: 100%;  
+    border-radius: 6px 0 0px 6px;
+    border: 1px solid #D1D5DB;
+    color: #6B7280;
+    background: url(/images/search-icon.png) no-repeat left 15px center white;
+}
+
+#search-btn {
+    padding: 9px 38px;
+    text-align: center;
+    background: #F9FAFB;
+    color: #374151;
+    border: 1px solid #D1D5DB;
+    border-radius: 0px 6px 6px 0px;
+}
+
+.empty-hero{
+    margin-top: 216px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #DFDDDD;
+}
+
+.empty-hero > img{
+    height: 61.24997329711914px;
+    width: 70px;
+    margin-bottom: 9px;
+}
+
+.empty-hero > a{
+    margin-top: 16px;
+    color: #363636;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.hidden{
+    display: none;
+}
+
+.hero{
+    padding: 0 44px 44px;
+}
+
+.movie, .movie div{
+    display: flex;
+}
+
+.movie{
+    padding: 21px 0;
+    gap: 21px;
+    align-items: center;
+    border-bottom: 1.5px solid #E5E7EB
+}
+
+.movie > div{
+    flex-direction: column;
+}
+
+.poster{
+    height: 147.41099548339844px;
+width: 99px;
+border-radius: 2.329411506652832px;
+
+}
+
+.top-movie, .middle-movie, .add-btn, .remove-btn{
+    align-items: center;
+}
+
+.top-movie img{
+    margin: 0 4px 0 8px;
+}
+
+.middle-movie{
+    margin: 11px 0 8px;
+}
+.middle-movie p:nth-of-type(2){
+    margin: 0 30px 0 15px;
+}
+
+.add-btn, .remove-btn{
+    gap: 5px;
+}
+
+
+/* UX */
+
+img{
+    -webkit-user-drag: none;
+}
+
+header, .empty-hero{
+    user-select: none;
+}
+
+.storage-nav:hover{
+    text-decoration: underline 1px white;
+    text-underline-offset: 5px;
+}
+
+#search-input:focus{
+    outline: none;
+}
+
+#search-btn:hover{
+    cursor: pointer;
+}
+
+#search-btn:focus{
+    border-color: #D1D5DB;
+}
+#search-btn:active{
+    border-color: #0e1111;
+}
+
+.empty-hero a:hover{
+    text-decoration: underline 1px #0e1111;
+    text-underline-offset: 4px;
+}
+
+.add-btn:hover, .remove-btn:hover, .read-more:hover{
+    text-decoration: underline 1px #0e1111;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}
+
+.add-btn:active, .remove-btn:active{
+    transform: scale(99%);
+}
+.add-btn:focus, .remove-btn:focus{
+    transform: scale(100%);
+}
